@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="./images/ACME.png" type="image/x-icon" />
+        <title>Vrinda</title>
+        <style>
+            /* Add custom styles here if needed */
+            body {
+                padding-top: 56px; /* Adjust the value based on your header height */
+                font-family: Axiforma, sans-serif;
+            }
+
+            @media (min-width: 992px) {
+                body {
+                    padding-top: 0;
+                }
+            }
+
+            /* Navbar Styles */
+            .navbar {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box Shadow */
+                backdrop-filter: blur(8px); /* Backdrop Filter Blur */
+            }
+            .our-services,
+            .our-team {
+                color: #8848fb;
+                text-shadow: 2px 2px 4px #2525256c;
+                font-size: 50px;
+            }
+
+            .owl-carousel .owl-item img {
+                /* width: 50%; */
+                margin: auto;
+                transition: all ease-in 0.6s;
+            }
+            .owl-carousel .owl-item img:hover {
+                transform: scale(1.1);
+            }
+            .updated-card {
+                border: none;
+                box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+                border-radius: 12px;
+                background: #eeeeee;
+                margin: auto;
+                width: 300px;
+            }
+            .teams {
+                filter: drop-shadow(0 2px 5px #252525);
+            }
+            .another-card {
+                background-image: radial-gradient(
+                    circle at top left,
+                    #354ecd 0,
+                    #354ecd 3%,
+                    #3548c2 3%,
+                    #3548c2 20%,
+                    #3641b7 20%,
+                    #3641b7 65%,
+                    #363bac 65%,
+                    #363bac 72%,
+                    #3735a0 72%,
+                    #3735a0 79%,
+                    #372f95 79%,
+                    #372f95 82%,
+                    #38288a 82%,
+                    #38288a 90%,
+                    #38288c 90%,
+                    #38288c 100%
+                );
+                color: #fff !important;
+                border-radius: 20px;
+            }
+            .bg-1 {
+                background-image: radial-gradient(
+                        circle at 46% 76%,
+                        rgba(255, 255, 255, 0.03) 0,
+                        rgba(255, 255, 255, 0.03) 3%,
+                        transparent 3%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 36% 87%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 3%,
+                        transparent 3%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 50% 78%,
+                        rgba(255, 255, 255, 0.01) 0,
+                        rgba(255, 255, 255, 0.01) 3%,
+                        transparent 3%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 22% 99%,
+                        rgba(255, 255, 255, 0.03) 0,
+                        rgba(255, 255, 255, 0.03) 7%,
+                        transparent 7%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 38% 63%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 7%,
+                        transparent 7%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 55% 50%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 7%,
+                        transparent 7%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 93% 55%,
+                        rgba(255, 255, 255, 0.01) 0,
+                        rgba(255, 255, 255, 0.01) 7%,
+                        transparent 7%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 24% 100%,
+                        rgba(255, 255, 255, 0.01) 0,
+                        rgba(255, 255, 255, 0.01) 7%,
+                        transparent 7%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 26% 53%,
+                        rgba(255, 255, 255, 0.03) 0,
+                        rgba(255, 255, 255, 0.03) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 17% 5%,
+                        rgba(255, 255, 255, 0.03) 0,
+                        rgba(255, 255, 255, 0.03) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 53% 51%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 10% 25%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 31% 56%,
+                        rgba(255, 255, 255, 0.01) 0,
+                        rgba(255, 255, 255, 0.01) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 40% 69%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 33% 89%,
+                        rgba(255, 255, 255, 0.02) 0,
+                        rgba(255, 255, 255, 0.02) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    radial-gradient(
+                        circle at 96% 22%,
+                        rgba(255, 255, 255, 0.03) 0,
+                        rgba(255, 255, 255, 0.03) 5%,
+                        transparent 5%,
+                        transparent 100%
+                    ),
+                    linear-gradient(296deg, #510093, #487bf4);
+            }
+            .image-container {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+                transition: opacity 0.3s;
+            }
+
+            .image-container:hover img {
+                opacity: 0.7;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .image-container:hover .overlay {
+                opacity: 1;
+            }
+            .fa-plus {
+                font-size: 22px;
+                cursor: pointer;
+            }
+
+            .custom-card {
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.323);
+                border: none;
+                border-radius: 20px;
+            }
+            .custom-card button {
+                background: #784b8e;
+                border: none;
+            }
+            iframe {
+                border-radius: 25px !important;
+            }
+            .video-section {
+                height: 100vh; /* 100% of the viewport height */
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/ACME.png" alt="Logo" height="30" />
+                </a>
+
+                <!-- Responsive Toggle Button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls
+                    autoplay="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                                >Home <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="mt-5 pt-3 video-section">
+            <div class="container">
+                <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Video Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video
+                                    class="embed-responsive-item"
+                                    autoplay
+                                    loop
+                                    muted
+                                    style="border-radius: 15px"
+                                >
+                                    <source src="./images/video-1.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video
+                                    class="embed-responsive-item"
+                                    autoplay
+                                    loop
+                                    muted
+                                    style="border-radius: 15px"
+                                >
+                                    <source src="./images/video-2.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video
+                                    class="embed-responsive-item"
+                                    autoplay
+                                    loop
+                                    muted
+                                    style="border-radius: 15px"
+                                >
+                                    <source src="./images/video-3.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video Slide 4 -->
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video
+                                    class="embed-responsive-item"
+                                    autoplay
+                                    loop
+                                    muted
+                                    style="border-radius: 15px"
+                                >
+                                    <source src="./images/video-4.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Video Slide 5 -->
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video
+                                    class="embed-responsive-item"
+                                    autoplay
+                                    loop
+                                    muted
+                                    style="border-radius: 15px"
+                                >
+                                    <source src="./images/video-5.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center our-services my-5">Our Services</h2>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quia
+                quam cum libero fuga exercitationem sapiente. <br />
+                Dignissimos perspiciatis rem facere eius possimus numquam. Quod, sit.
+            </p>
+            <!-- Owl Carousel -->
+            <div class="container">
+                <div class="col-lg-12 owl-carousel owl-theme">
+                    <!-- Card 1 -->
+                    <div class="card text-center mb-4 updated-card">
+                        <img
+                            src="./images/card-1.png"
+                            class="card-img-top img-fluid p-4 rounded-circle"
+                            alt="Person 1"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Garry Balance</h5>
+                            <p class="card-text">Finance Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card text-center mb-4 updated-card">
+                        <img
+                            src="./images/card-2.png"
+                            class="card-img-top img-fluid p-4 rounded-circle"
+                            alt="Person 2"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Hales</h5>
+                            <p class="card-text">Administrative Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card text-center mb-4 updated-card">
+                        <img
+                            src="./images/card-4.png"
+                            class="card-img-top img-fluid p-4 rounded-circle"
+                            alt="Person 3"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Albulena</h5>
+                            <p class="card-text">Relationship Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card text-center mb-4 updated-card">
+                        <img
+                            src="./images/card-3.png"
+                            class="card-img-top img-fluid p-4 rounded-circle"
+                            alt="Person 4"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Smith</h5>
+                            <p class="card-text">Audit Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card text-center mb-4 updated-card">
+                        <img
+                            src="./images/card-5.png"
+                            class="card-img-top img-fluid p-4 rounded-circle"
+                            alt="Person 5"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Sharapova</h5>
+                            <p class="card-text">Accountant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Owl Carousel -->
+        </section>
+
+        <!-- Our Team Start -->
+
+        <section class="my-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="our-team">Our Team</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                            eius obcaecati, reiciendis voluptates nesciunt quas, totam
+                            nihil fuga, facere molestiae placeat nostrum dolore explicabo
+                            autem!
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-lg-6">
+                        <div class="card another-card">
+                            <div
+                                class="row justify-content-center align-items-center d-flex"
+                            >
+                                <div class="col-lg-6">
+                                    <img
+                                        src="./images/card-3.png"
+                                        alt="Image Description"
+                                        class="img-fluid teams"
+                                    />
+                                </div>
+
+                                <!-- Right column for heading, subheading, and paragraph -->
+                                <div class="col-lg-6">
+                                    <h3>John Doe</h3>
+                                    <h4>Software Developer</h4>
+                                    <p>New York, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card another-card">
+                            <div
+                                class="row justify-content-center align-items-center d-flex"
+                            >
+                                <div class="col-lg-6">
+                                    <img
+                                        src="images/card-1.png"
+                                        alt="Image Description"
+                                        class="img-fluid teams"
+                                    />
+                                </div>
+
+                                <!-- Right column for heading, subheading, and paragraph -->
+                                <div class="col-lg-6">
+                                    <h3>Jane Smith</h3>
+                                    <h4>Graphic Designer</h4>
+                                    <p>Los Angeles, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col-lg-6">
+                        <div class="card another-card">
+                            <div
+                                class="row justify-content-center align-items-center d-flex"
+                            >
+                                <div class="col-lg-6">
+                                    <img
+                                        src="./images/card-5.png"
+                                        alt="Image Description"
+                                        class="img-fluid teams"
+                                    />
+                                </div>
+
+                                <!-- Right column for heading, subheading, and paragraph -->
+                                <div class="col-lg-6">
+                                    <h3>Emma Williams</h3>
+                                    <h4>Marketing Manager</h4>
+                                    <p>London, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card another-card">
+                            <div
+                                class="row justify-content-center align-items-center d-flex"
+                            >
+                                <div class="col-lg-6">
+                                    <img
+                                        src="./images/card-2.png"
+                                        alt="Image Description"
+                                        class="img-fluid teams"
+                                    />
+                                </div>
+
+                                <!-- Right column for heading, subheading, and paragraph -->
+                                <div class="col-lg-6">
+                                    <h3>Alice Brown</h3>
+                                    <h4>Product Manager</h4>
+                                    <p>Tokyo, Japan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team End -->
+
+        <!-- Subscribe Newsletter Start -->
+
+        <section class="bg-1 text-white p-4">
+            <h2 class="text-center">Subscribe to Our Newsletter</h2>
+            <div class="text-center">
+                <img
+                    src="./images/ACME.png"
+                    class="img-fluid"
+                    alt="Acme"
+                    style="mix-blend-mode: color-burn"
+                />
+                <h3 class="my-4">
+                    Get Latest News, Blogs & Events Every Week on Your Email
+                    <i class="fa fa-envelope"></i>
+                </h3>
+                <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#subscribeModal"
+                >
+                    Subscribe Now
+                </button>
+            </div>
+        </section>
+
+        <!-- Subscribe Newsletter End -->
+
+        <!-- Our Portfolio Start -->
+        <section class="pt-3">
+            <h2 class="our-team text-center">Our Portfolio</h2>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+                corporis incidunt animi fugit, aperiam sequi architecto, <br />
+                in voluptatibus quisquam itaque labore repudiandae ducimus autem ab!
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/300"
+                                class="img-fluid"
+                                alt="Image 1"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/301"
+                                class="img-fluid"
+                                alt="Image 2"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/302"
+                                class="img-fluid"
+                                alt="Image 3"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/303"
+                                class="img-fluid"
+                                alt="Image 4"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/304"
+                                class="img-fluid"
+                                alt="Image 5"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container">
+                            <img
+                                src="https://picsum.photos/400/305"
+                                class="img-fluid"
+                                alt="Image 6"
+                            />
+                            <div class="overlay">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Portfolio End -->
+
+        <!-- Contact Us Start -->
+
+        <section class="mb-4">
+            <h2 class="our-team text-center my-2">Contact Us</h2>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum, quos
+                est hic distinctio quis aut voluptatem provident eligendi reprehenderit
+                <br />
+                a natus quo recusandae ab, explicabo doloribus vitae ullam labore?
+            </p>
+            <div class="container mt-4">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-lg-6">
+                                <form action="#" method="post">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name"
+                                            name="name"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group my-4">
+                                        <label for="email">Email:</label>
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            name="email"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone:</label>
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="phone"
+                                            name="phone"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group my-4">
+                                        <label for="message">Message:</label>
+                                        <textarea
+                                            class="form-control"
+                                            id="message"
+                                            name="message"
+                                            rows="4"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Neque cum repellendus ratione cumque soluta sed
+                                    laboriosam debitis vitae laborum dolor laudantium
+                                    nulla saepe, rem accusantium nemo? Velit quos ipsum
+                                    tempore?
+                                </p>
+                                <p>
+                                    eum esse nemo? Optio, quis nulla enim unde, quisquam
+                                    aperiam et deleniti itaque molestias ea, eveniet
+                                    labore. Laboriosam molestiae repellat laudantium ut
+                                    nihil incidunt, possimus dicta sapiente eveniet
+                                    dolorem iusto! Illum, sequi quam.
+                                </p>
+
+                                <div class="social-icons mt-4">
+                                    <a href="#" class="fs-3 mr-4 text-black"
+                                        ><i class="fab fa-facebook"></i
+                                    ></a>
+                                    <a href="#" class="fs-3 mr-4 text-black"
+                                        ><i class="fab fa-x-twitter"></i
+                                    ></a>
+                                    <a href="#" class="fs-3 mr-4 text-black"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-3">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us End -->
+
+        <!-- Reach Us Start -->
+
+        <section class="text-center">
+            <div class="container">
+                <h2 class="text-center our-team">Reach Us</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14024.007427005099!2d77.06420115774431!3d28.50959186171027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1961493f379b%3A0xb10e1252144b4bdc!2sHaryana%20122016!5e0!3m2!1sen!2sin!4v1702510756724!5m2!1sen!2sin"
+                    width="1200"
+                    height="650"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Reach Us End -->
+
+        <!-- Footer Start -->
+
+        <footer
+            class="footer p-5 text-white text-decoration-none"
+            style="background: #8848fb"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Contact Us</h5>
+                        <address>
+                            <strong>ACME Inc.</strong><br />
+                            Gurgaon, <br />
+                            Haryana, India<br />
+                            <i class="fas fa-phone"></i> Phone: (+624) 456-7890<br />
+                            <i class="fas fa-envelope"></i> Email: info@acme.com
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Services</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Web Design</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Graphic Design</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Digital Marketing</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Services</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >SEO Optimization</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >Banner Design</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"
+                                    >E-Commerce</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2023 ACME Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer End -->
+
+        <!-- Modal start-->
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="subscribeModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="subscribeModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="subscribeModalLabel">Subscribe</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control my-2"
+                                    aria-describedby="emailHelp"
+                                    required
+                                    placeholder="Enter your email"
+                                />
+                                <small id="emailHelp" class="form-text text-muted"
+                                    >We'll never share your email with anyone else.</small
+                                >
+                            </div>
+                            <button type="submit" class="btn btn-primary my-2">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+
+        <!-- Bootstrap JS and Popper.js -->
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        },
+                        992: {
+                            items: 3,
+                        },
+                    },
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                });
+            });
+            // Wait for the document to be ready
+            $(document).ready(function () {
+                // Initialize the carousel
+                $('#myCarousel').carousel();
+
+                // Listen for the 'ended' event on each video
+                $('#myCarousel video').on('ended', function () {
+                    // Move to the next slide
+                    $('#myCarousel').carousel('next');
+                });
+            });
+        </script>
+    </body>
+</html>
